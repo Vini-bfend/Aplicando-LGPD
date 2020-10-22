@@ -9,7 +9,7 @@ a {
 }
 
 h1{
-    font-size: 40px;
+    font-size: 75px;
 }
 
 h2{
@@ -17,11 +17,11 @@ h2{
 }
 
 h3{
-    font-size: 28px;
+    font-size: 45px;
 }
 
 h4{
-    font-size: 22px;
+    font-size: 25px;
 }
 
 .icon {
@@ -117,7 +117,6 @@ header .header-title h2{
 }
 
 header .header-title h1{
-    font-size: 75px;
     text-transform: uppercase;
     text-shadow: 0 0 60px #00dd80;
     margin: 10px 0 60px;
@@ -155,9 +154,53 @@ header .header-title .button-default a:active {
 
  /* Main */
 
-.main-main .main-section {
+.main-main .main-section:nth-child(even) {
+    background: #f8f8f8;
+} 
+
+.main-main .main-section .services {
+    padding: 70px 0;
     margin: 0 auto;
     width: 70%;
 }
 
+.main-main .main-section .services p{
+    color: #34464c;
+}
 
+.main-main .main-section .services .sub-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.main-main .main-section .services .sub-header h3 {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.main-main .main-section .services .services-card {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.main-main .main-section .services .services-card .card {
+    width: 30%;
+}
+
+.main-main .main-section .services .services-card .card .icon {
+    font-size: 65px;
+    height: 125px;
+    margin: 0 auto 10px;
+    width: 125px;
+}
+
+.main-main .main-section .services .services-card .card h4 {
+    margin: 20px 0 10px;
+}
+                       
+.main-main .main-section .services .services-card .card p {
+    font-weight: 500;
+    line-height: 1.7;
+}    
