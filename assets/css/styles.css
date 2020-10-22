@@ -41,7 +41,7 @@ h4{
 /* Header */
 
 header {
-    background: url(../images/bg-home.jpg) right top;
+    background: #34464c url(../images/bg-ho,me.jpg) right top;
     color: white;
 }
 
@@ -91,7 +91,7 @@ header .header nav .menu {
 
 header nav .menu li a {
     color: white;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     font-size: 15px;
     transition: .3s ease;
 }
@@ -101,14 +101,63 @@ header nav .menu li a:hover {
 }
 
 header nav .menu li:not(:last-child) a {
-    padding-right: 20px;
+    padding-right: 25px;
 }
 
 header .header-title {
-    margin: 250px auto;
+    margin: 150px auto;
+    text-align: center;
+    width: 90%;
+}
+
+header .header-title h2{
+    color: #00dd80;
+    font-style: italic;
+    font-weight: 300;
+}
+
+header .header-title h1{
+    font-size: 75px;
+    text-transform: uppercase;
+    text-shadow: 0 0 60px #00dd80;
+    margin: 10px 0 60px;
+}
+
+header .header-title .button-default {
+    background-color: transparent;
+    border: none;
+}
+
+header .header-title .button-default a{
+    background: #00dd80;
+    border: 3px solid #00dd80;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #34464c;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 25px 40px;
+    text-transform: uppercase;
+    transition: .3s ease;
+}
+
+header .header-title .button-default a:hover {
+    background: #00b76a;
+    border: 1px solid #00dd80;
+}
+
+header .header-title .button-default a:active {
+    color: white;
+    border: 5px solid #008d52;
+}
+
+
+
+ /* Main */
+
+.main-main .main-section {
+    margin: 0 auto;
     width: 70%;
 }
 
-/* header .header-title {
 
-} */
