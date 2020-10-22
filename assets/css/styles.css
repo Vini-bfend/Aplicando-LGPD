@@ -1,0 +1,114 @@
+body {
+    font-family: 'Montserrat', 'Noto Serif', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1{
+    font-size: 40px;
+}
+
+h2{
+    font-size: 34px;
+}
+
+h3{
+    font-size: 28px;
+}
+
+h4{
+    font-size: 22px;
+}
+
+.icon {
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+ }
+
+ .icon.green{
+    background-color: #00dd80;
+    color: white;
+} 
+
+/* Padronização ^ ^ ^ ^ */
+
+/* Header */
+
+header {
+    background: url(../images/bg-home.jpg) right top;
+    color: white;
+}
+
+header .header {
+    margin: 0 auto;
+    padding: 0 0 20px;
+    width: 70%;
+}
+
+header .header nav .logo {
+    display: flex;
+    text-align: justify;
+    align-items: center;
+}
+
+header .header nav .logo .icon {
+    font-size: 20px;
+    height: 45px;
+    margin: 7px;
+    width: 45px;
+}
+
+header .header nav .logo #logo-lgpd {
+    text-align: justify;
+    width: 100px;
+}
+
+header .header nav .logo #logo-lgpd #lgpd{
+    letter-spacing: 4px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+header .header nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 10px;
+}
+
+header .header nav .menu {
+    display: flex;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+
+header nav .menu li a {
+    color: white;
+    letter-spacing: 1px;
+    font-size: 15px;
+    transition: .3s ease;
+}
+
+header nav .menu li a:hover {
+    color: #00dd80;
+}
+
+header nav .menu li:not(:last-child) a {
+    padding-right: 20px;
+}
+
+header .header-title {
+    margin: 250px auto;
+    width: 70%;
+}
+
+/* header .header-title {
+
+} */
