@@ -48,7 +48,7 @@ header {
 header .header {
     margin: 0 auto;
     padding: 0 0 20px;
-    width: 70%;
+    width: 67%;
 }
 
 header .header nav .logo {
@@ -158,49 +158,78 @@ header .header-title .button-default a:active {
     background: #f8f8f8;
 } 
 
-.main-main .main-section .services {
+.main-main .main-section .div-main-section {
     padding: 70px 0;
     margin: 0 auto;
-    width: 70%;
+    width: 67%;
 }
 
-.main-main .main-section .services p{
+.main-main .main-section .div-main-section p{
     color: #34464c;
 }
 
-.main-main .main-section .services .sub-header {
+.main-main .main-section .div-main-section .sub-header {
     text-align: center;
     margin-bottom: 50px;
 }
 
-.main-main .main-section .services .sub-header h3 {
+.main-main .main-section .div-main-section .sub-header h3 {
     margin: 0;
     padding: 0;
     text-transform: uppercase;
 }
 
-.main-main .main-section .services .services-card {
+
+/* Services */
+
+.main-main .main-section .div-main-section .services-card {
     display: flex;
     justify-content: space-between;
     text-align: center;
 }
 
-.main-main .main-section .services .services-card .card {
+.main-main .main-section .div-main-section .services-card .card {
     width: 30%;
 }
 
-.main-main .main-section .services .services-card .card .icon {
+.main-main .main-section .div-main-section .services-card .card .icon {
     font-size: 65px;
     height: 125px;
     margin: 0 auto 10px;
     width: 125px;
 }
 
-.main-main .main-section .services .services-card .card h4 {
+.main-main .main-section .div-main-section .services-card .card h4 {
     margin: 20px 0 10px;
 }
-                       
-.main-main .main-section .services .services-card .card p {
+
+.main-main .main-section .div-main-section .services-card .card p {
     font-weight: 500;
     line-height: 1.7;
-}    
+}
+
+
+/* portifolio */
+
+
+.main-main .main-section .div-main-section .portfolio-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.main-main .main-section .div-main-section .portfolio-card .card {
+    background: #fff;
+    margin-bottom: 30px ;
+    width: 32%;
+}
+
+.main-main .main-section .div-main-section .portfolio-card .card .card-img img {
+    width: 100%;
+}
+
+.main-main .main-section .div-main-section .portfolio-card .card h4 {
+    margin: 20px 0 -10px;
+}
+
