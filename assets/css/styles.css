@@ -42,7 +42,10 @@ h4{
 /* Header */
 
 header {
-    background: #34464c url(../images/bg-ho,me.jpg) right top;
+    background-image: linear-gradient(to right, rgba(52, 70, 76, 0.95), rgba(52, 70, 76, 0.95)), url(../images/bg-home.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top right;
     color: white;
 }
 
@@ -325,4 +328,69 @@ header .header-title .button-default a:active {
 
 
 
+/* Contato */
+
+
+.main-main .main-section:last-child {
+    background-color: #34464c;
+    background-image: url(../images/map-image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff
+}
+
+
+.main-main .main-section .div-main-section:last-child p {
+    color: #fff;
+}
+
+
+.main-main .main-section .div-main-section .contact form {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-main .main-section .div-main-section .contact form #left {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 250px;
+    justify-content: space-between;
+    width: 49%;
+}
+
+.main-main .main-section .div-main-section .contact form #left div{
+    width: 100%;
+}
+
+.main-main .main-section .div-main-section .contact form #left div input {
+    border: 2px solid transparent;
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: 60px;
+    padding: 10px;
+    width: 100%;    
+}
+
+.main-main .main-section .div-main-section .contact form #left div input:focus {
+    border: 2px solid #00dd80;
+}
+
+.main-main .main-section .div-main-section .contact form #right {
+    width: 49%;
+}
+
+.main-main .main-section .div-main-section .contact form #right textarea {
+    border: 2px solid transparent;
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: 226px;
+    padding: 10px;
+    resize: none;
+    width: 100%; 
+}
+
+/*  footer */
 
