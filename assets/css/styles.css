@@ -298,15 +298,11 @@ header .header-title .button-default a:active {
     margin-top: 30px;
 }
 
-.main-main .main-section .div-main-section .team .team-card .icons .team-icon {
-    align-items: center;
+.main-main .main-section .div-main-section .team .team-card .icons .icon {
     background-color: #34464c;
-    border-radius: 50%;
     color: #f8f8f8;
-    display: flex;
     font-size: 18px;
     height: 40px;
-    justify-content: center;
     width: 40px;
 }
 
@@ -340,7 +336,7 @@ header .header-title .button-default a:active {
 }
 
 
-.main-main .main-section .div-main-section:last-child p {
+.main-main .main-section:last-child .div-main-section p {
     color: #fff;
 }
 
@@ -394,3 +390,51 @@ header .header-title .button-default a:active {
 
 /*  footer */
 
+footer {
+    padding: 20px 0;
+}
+
+footer .div-main-footer {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 70%;
+}
+
+footer .div-main-footer .icons{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+footer .div-main-footer .icons .icon {
+    background-color: #34464c;
+    color: #f8f8f8;
+    font-size: 18px;
+    height: 40px;
+    width: 40px;
+}
+
+footer .div-main-footer .icons .icon:not(:last-child){
+    margin-right: 50px;
+}
+
+footer .div-main-footer .links {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+    
+}
+        
+footer .div-main-footer .links a {
+    color: #00dd80;
+    transition: .3s ease;
+}
+        
+footer .div-main-footer .links a:hover {
+    color: #008d52;
+    text-decoration: underline #008d52;
+}
