@@ -5,6 +5,7 @@ body {
 }
 
 a {
+    color: inherit;
     text-decoration: none;
 }
 
@@ -225,6 +226,35 @@ header .header-title .button-default a:active {
     width: 32%;
 }
 
+.main-main .main-section .div-main-section .portfolio-card .card .card-img {
+    height: 267.39px;
+    position: relative;
+    overflow: hidden;
+}
+
+    
+.main-main .main-section .div-main-section .portfolio-card .card .card-img::after {
+    align-items: center;
+    background-color: transparent;
+    bottom:0px;
+    color: #fff;
+    cursor: pointer;
+    content: "+";
+    display: flex;
+    font-size: 100px;
+    justify-content: center;
+    left:0;
+    position: absolute;
+    right:0;
+    top: 300px;
+    transition: ease .3s;
+}
+
+.main-main .main-section .div-main-section .portfolio-card .card .card-img:hover::after {
+    background-color: rgba(73, 191, 158, 0.671);
+    top: 0;
+}
+
 .main-main .main-section .div-main-section .portfolio-card .card .card-img img {
     width: 100%;
 }
@@ -232,4 +262,67 @@ header .header-title .button-default a:active {
 .main-main .main-section .div-main-section .portfolio-card .card h4 {
     margin: 20px 0 -10px;
 }
+
+
+
+/* Team */
+
+.main-main .main-section .div-main-section .team {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main-main .main-section .div-main-section .team .team-card {
+    text-align: center;
+    width: 20%;
+}
+
+.main-main .main-section .div-main-section .team .team-card .team-card-img img {
+    border: 10px solid #ddd;
+    border-radius: 50%;
+    width: 100%;
+}
+
+.main-main .main-section .div-main-section .team .team-card h4 {
+    margin: 20px 0 -10px;
+}
+.main-main .main-section .div-main-section .team .team-card .icons {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.main-main .main-section .div-main-section .team .team-card .icons .team-icon {
+    align-items: center;
+    background-color: #34464c;
+    border-radius: 50%;
+    color: #f8f8f8;
+    display: flex;
+    font-size: 18px;
+    height: 40px;
+    justify-content: center;
+    width: 40px;
+}
+
+.main-main .main-section .div-main-section .team .description {
+    text-align: center;
+    margin: 30px auto 0;
+    width: 70%;
+}
+
+
+
+/* Patrocínios */
+
+.main-main .main-section .div-main-section.sponsorship {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
 
