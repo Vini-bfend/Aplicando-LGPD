@@ -271,6 +271,7 @@ header .header-title .button-default a:active {
 /* About */
 
 .main-main .main-section .div-main-section .maybe-a-card-dad {
+    position: relative;
     width: 100%;
 }
 
@@ -285,6 +286,7 @@ header .header-title .button-default a:active {
 .main-main .main-section .div-main-section .maybe-a-card-dad .maybe-a-card .maybe-a-description {
     text-align: right;
     margin-right: 100px;
+    order: -1;
 }
 
 /* Container e Texto ao lado *direita* */
@@ -296,6 +298,7 @@ header .header-title .button-default a:active {
 .main-main .main-section .div-main-section .maybe-a-card-dad .maybe-a-card:nth-child(even) .maybe-a-description{
     text-align: left;
     margin: 0 0 0 100px;
+    order: 1;
 }
 
 .main-main .main-section .div-main-section .maybe-a-card-dad .maybe-a-card img {
@@ -304,6 +307,34 @@ header .header-title .button-default a:active {
     box-sizing: border-box;
     height: 200px;
     width: 200px;
+}
+
+.main-main .main-section .div-main-section .maybe-a-card-dad .maybe-a-line {
+    background-color: #ddd;
+    height: 1300px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 1px);
+    width: 2px;
+    z-index: -1;
+}
+
+.main-main .main-section .div-main-section .maybe-a-card-dad .maybe-a-greenball {
+    background: #00dd80;
+    border: 5px solid #ddd;
+    border-radius: 50%;
+    box-sizing: border-box;
+    height: 200px;
+    margin: 0 auto;
+    width: 200px;
+}
+
+.main-main .main-section .div-main-section .maybe-a-card-dad .maybe-a-greenball h4 {
+    color: white;
+    line-height: 1.2;
+    text-align: center;
+    margin: 25% 0;
 }
 
 /* Team */
@@ -338,10 +369,17 @@ header .header-title .button-default a:active {
 
 .main-main .main-section .div-main-section .team .team-card .icons .icon {
     background-color: #34464c;
+    cursor: pointer;
     color: #f8f8f8;
     font-size: 18px;
     height: 40px;
+    transition: .3s ease;
     width: 40px;
+}
+    
+.main-main .main-section .div-main-section .team .team-card .icons .icon:hover {
+    color: #fff;
+    background-color: #23272b;
 }
 
 .main-main .main-section .div-main-section .team .description {
@@ -449,14 +487,21 @@ footer .div-main-footer .icons{
 
 footer .div-main-footer .icons .icon {
     background-color: #34464c;
+    cursor: pointer;
     color: #f8f8f8;
     font-size: 18px;
     height: 40px;
+    transition: .3s ease;
     width: 40px;
 }
 
 footer .div-main-footer .icons .icon:not(:last-child){
-    margin-right: 50px;
+    margin-right: 25px;
+}
+
+footer .div-main-footer .icons .icon:hover {
+    color: #fff;
+    background-color: #23272b;
 }
 
 footer .div-main-footer .links {
