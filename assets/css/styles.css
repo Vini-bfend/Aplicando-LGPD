@@ -23,6 +23,7 @@ h3{
 
 h4{
     font-size: 25px;
+    margin: 0;
 }
 
 .icon {
@@ -267,6 +268,43 @@ header .header-title .button-default a:active {
 }
 
 
+/* About */
+
+.main-main .main-section .div-main-section .maybe-a-card-dad {
+    width: 100%;
+}
+
+/* Container e  Texto ao lado *esquerda**/
+.main-main .main-section .div-main-section .maybe-a-card-dad .maybe-a-card {
+    display: flex;
+    align-items: center;
+    margin-right: calc(50% - 100px);
+    margin-bottom: 80px;
+}
+
+.main-main .main-section .div-main-section .maybe-a-card-dad .maybe-a-card .maybe-a-description {
+    text-align: right;
+    margin-right: 100px;
+}
+
+/* Container e Texto ao lado *direita* */
+.main-main .main-section .div-main-section .maybe-a-card-dad .maybe-a-card:nth-child(even) {
+    margin-right: 0;
+    margin-left: calc(50% - 100px);
+}
+
+.main-main .main-section .div-main-section .maybe-a-card-dad .maybe-a-card:nth-child(even) .maybe-a-description{
+    text-align: left;
+    margin: 0 0 0 100px;
+}
+
+.main-main .main-section .div-main-section .maybe-a-card-dad .maybe-a-card img {
+    border: 5px solid #ddd;
+    border-radius: 50%;
+    box-sizing: border-box;
+    height: 200px;
+    width: 200px;
+}
 
 /* Team */
 
