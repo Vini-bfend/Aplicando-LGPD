@@ -582,7 +582,8 @@ footer .div-main-footer .links a:hover {
         position: absolute;
         pointer-events: none;
         opacity: 0;
-        transition: top .5s ease, opacity .2s ease .2s;
+        transition: .3s ease;
+        top: 73px;
         width: 100%;
         z-index: 0;
     }
