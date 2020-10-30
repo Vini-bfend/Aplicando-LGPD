@@ -56,6 +56,16 @@ header .header {
     width: 67%;
 }
 
+header .header nav .dropdown input[type="checkbox"] {
+    height: 0;
+    overflow: hidden;
+    width: 0;
+}
+
+header .header nav .dropdown span {
+    display: none;
+}
+
 header .header nav .logo {
     display: flex;
     text-align: justify;
@@ -184,6 +194,9 @@ header .header-title .button-default a:active {
     text-transform: uppercase;
 }
 
+.main-main .main-section .div-main-section .sub-header p {
+    font-style: italic;
+}
 
 /* Services */
 
@@ -236,11 +249,11 @@ header .header-title .button-default a:active {
     overflow: hidden;
 }
 
-    
+
 .main-main .main-section .div-main-section .portfolio-card .card .card-img::after {
     align-items: center;
     background-color: transparent;
-    bottom:0px;
+    bottom: 0px;
     color: #fff;
     cursor: pointer;
     content: "+";
@@ -271,16 +284,18 @@ header .header-title .button-default a:active {
 /* About */
 
 .main-main .main-section .div-main-section .maybe-a-card-dad {
+    overflow: hidden;
     position: relative;
     width: 100%;
 }
 
 /* Container e  Texto ao lado *esquerda**/
 .main-main .main-section .div-main-section .maybe-a-card-dad .maybe-a-card {
-    display: flex;
     align-items: center;
-    margin-right: calc(50% - 100px);
-    margin-bottom: 80px;
+    display: flex;
+    margin-right: calc(50% - 90px);
+    margin-bottom: 100px;
+    position: relative;
 }
 
 .main-main .main-section .div-main-section .maybe-a-card-dad .maybe-a-card .maybe-a-description {
@@ -292,7 +307,7 @@ header .header-title .button-default a:active {
 /* Container e Texto ao lado *direita* */
 .main-main .main-section .div-main-section .maybe-a-card-dad .maybe-a-card:nth-child(even) {
     margin-right: 0;
-    margin-left: calc(50% - 100px);
+    margin-left: calc(50% - 90px);
 }
 
 .main-main .main-section .div-main-section .maybe-a-card-dad .maybe-a-card:nth-child(even) .maybe-a-description{
@@ -305,13 +320,13 @@ header .header-title .button-default a:active {
     border: 5px solid #ddd;
     border-radius: 50%;
     box-sizing: border-box;
-    height: 200px;
-    width: 200px;
+    height: 180px;
+    width: 180px;
 }
 
 .main-main .main-section .div-main-section .maybe-a-card-dad .maybe-a-line {
     background-color: #ddd;
-    height: 1300px;
+    height: 3200px;
     margin: 0 auto;
     position: absolute;
     top: 0;
@@ -376,7 +391,7 @@ header .header-title .button-default a:active {
     transition: .3s ease;
     width: 40px;
 }
-    
+
 .main-main .main-section .div-main-section .team .team-card .icons .icon:hover {
     color: #fff;
     background-color: #23272b;
@@ -395,7 +410,12 @@ header .header-title .button-default a:active {
 .main-main .main-section .div-main-section.sponsorship {
     align-items: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.main-main .main-section .div-main-section.sponsorship div {
+    max-width: 24.5%;
 }
 
 
@@ -511,13 +531,177 @@ footer .div-main-footer .links {
     width: 320px;
     
 }
-        
+
 footer .div-main-footer .links a {
     color: #00dd80;
     transition: .3s ease;
 }
-        
+
 footer .div-main-footer .links a:hover {
     color: #008d52;
     text-decoration: underline #008d52;
+}
+
+@media screen and (max-width: 768px) {
+    
+    /* cabeçalho */
+    
+    header .header{
+        width: 100%;
+    }
+    
+    header .header nav {
+        background-color: white;
+        box-shadow: 0 1px 5px 2px #ddd;
+        color: black;
+        justify-content: space-between;
+        padding: 20px 10px 10px;
+        z-index: 2;
+    }
+    
+    header .header nav .dropdown span {
+        align-items: center;
+        background-color: #00dd80;
+        border-radius: 4px;
+        color: white;
+        cursor: pointer;
+        display: inline-flex;
+        justify-content: center;
+        height: 35px;
+        width: 35px;
+    }
+    
+    header .header nav .dropdown .menu {
+        background-color: #fff;
+        box-shadow: 0 3px 3px 0px #ddd;
+        box-sizing: border-box;
+        display: block;
+        left: 0;
+        margin: 0 auto;
+        padding: 15px 10px;
+        position: absolute;
+        pointer-events: none;
+        opacity: 0;
+        transition: top .5s ease, opacity .2s ease .2s;
+        width: 100%;
+        z-index: 0;
+    }
+    
+    header .header nav .dropdown .menu li {
+        padding: 10px 0 10px 10px;
+    }
+    
+    header .header nav .dropdown .menu li a {
+        color: #00dd80;
+    }
+    
+    header .header nav .dropdown input[type="checkbox"]:checked ~ .menu{
+        opacity: 1;
+        pointer-events: initial;
+        top: 73px;
+    }
+    header .header nav .dropdown input[type="checkbox"]:checked ~ .menu li {
+        width: 100%;
+    }
+    
+    header .header nav .dropdown input[type="checkbox"]:checked ~ .menu li:hover a {
+        color: #008d52;
+    }
+
+    /* conteúdo príncipal */
+
+    .main-main .main-section .div-main-section {
+        width: 90%;
+    }   
+
+    /* Protifólio */
+
+    .main-main .main-section .div-main-section .portfolio-card .card {
+        width: 49%;
+    }
+
+    .main-main .main-section .div-main-section .portfolio-card .card .card-img {
+        height: 247.39px;
+    }
+
+    /* About */
+
+    .main-main .main-section .div-main-section .maybe-a-card-dad .maybe-a-card {
+        align-items: flex-start;
+        display: inline-flex;
+        margin-right: calc(50% - 60px);
+    }
+
+    .main-main .main-section .div-main-section .maybe-a-card-dad .maybe-a-card:nth-child(even) {
+        margin-left: calc(50% - 60px);
+        margin-right: 0;
+    }
+
+    .main-main .main-section .div-main-section .maybe-a-card-dad .maybe-a-card .maybe-a-description {
+        margin-right: 50px;
+    }
+    
+    .main-main .main-section .div-main-section .maybe-a-card-dad .maybe-a-card:nth-child(even) .maybe-a-description {
+        margin: 0 0 0 50px;
+    }
+
+    .main-main .main-section .div-main-section .maybe-a-card-dad .maybe-a-card img {
+        display: inline-flex;
+        height: 120px;
+        width: 120px;
+    }
+    
+    .main-main .main-section .div-main-section .maybe-a-card-dad .maybe-a-greenball {
+        height: 120px;
+        width: 120px;
+    }
+    
+    .main-main .main-section .div-main-section .maybe-a-card-dad .maybe-a-greenball h4 {
+        font-size: 17px;
+    }
+
+    /* Team */
+
+    .main-main .main-section .div-main-section .team {
+        display: block;
+    }
+
+    .main-main .main-section .div-main-section .team .team-card {
+        margin: 0 auto 50px;
+        width: 37%;
+    }
+
+    .main-main .main-section .div-main-section .team .description {
+        width: 100%;
+    }
+
+    /* Footer */
+
+    footer .div-main-footer {
+        display: block;
+        margin: 0 auto;
+        width: 40%;
+        text-align: center;
+    }
+
+    footer .div-main-footer .icons {
+        justify-content: center;
+    }
+
+    footer .div-main-footer .links {
+        justify-content: space-between;
+        font-size: 15px;
+    }
+
+    /* Patrocíonio */
+
+    .main-main .main-section .div-main-section.sponsorship {
+        align-items: center;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-around;
+        width: 97.5%;
+        margin: 0 auto 0 0;
+    }
+
 }
