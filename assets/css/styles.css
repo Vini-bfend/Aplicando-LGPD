@@ -244,9 +244,9 @@ header .header-title .button-default a:active {
 }
 
 .main-main .main-section .div-main-section .portfolio-card .card .card-img {
-    height: 267.39px;
     position: relative;
     overflow: hidden;
+    height: auto;
 }
 
 
@@ -273,7 +273,9 @@ header .header-title .button-default a:active {
 }
 
 .main-main .main-section .div-main-section .portfolio-card .card .card-img img {
-    width: 100%;
+    height: auto;
+    max-width: 100%;    
+    vertical-align: middle;
 }
 
 .main-main .main-section .div-main-section .portfolio-card .card h4 {
@@ -369,6 +371,7 @@ header .header-title .button-default a:active {
 .main-main .main-section .div-main-section .team .team-card .team-card-img img {
     border: 10px solid #ddd;
     border-radius: 50%;
+    box-sizing: border-box;
     width: 100%;
 }
 
@@ -412,10 +415,6 @@ header .header-title .button-default a:active {
     display: flex;
     justify-content: space-around;
     width: 100%;
-}
-
-.main-main .main-section .div-main-section.sponsorship div {
-    max-width: 24.5%;
 }
 
 
@@ -528,22 +527,24 @@ footer .div-main-footer .links {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    width: 320px;
-    
 }
 
-footer .div-main-footer .links a {
+footer .div-main-footer .links p {
+    text-align: center;
+    margin: 0 10px;
+} 
+
+footer .div-main-footer .links p a {
     color: #00dd80;
     transition: .3s ease;
 }
 
-footer .div-main-footer .links a:hover {
+footer .div-main-footer .links p a:hover {
     color: #008d52;
     text-decoration: underline #008d52;
 }
 
-@media screen and (max-width: 768px) {
-    
+@media screen and (max-width: 1050px) {
     /* cabeçalho */
     
     header .header{
@@ -609,6 +610,11 @@ footer .div-main-footer .links a:hover {
         color: #008d52;
     }
 
+}
+
+@media screen and (max-width: 768px) {
+    
+    
     /* conteúdo príncipal */
 
     .main-main .main-section .div-main-section {
@@ -680,9 +686,9 @@ footer .div-main-footer .links a:hover {
 
     footer .div-main-footer {
         display: block;
-        margin: 0 auto;
-        width: 40%;
         text-align: center;
+        margin: 0 auto;
+        width: 50%;
     }
 
     footer .div-main-footer .icons {
@@ -690,19 +696,123 @@ footer .div-main-footer .links a:hover {
     }
 
     footer .div-main-footer .links {
-        justify-content: space-between;
         font-size: 15px;
+        justify-content: space-around;
     }
 
     /* Patrocíonio */
 
     .main-main .main-section .div-main-section.sponsorship {
         align-items: center;
-        box-sizing: border-box;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
-        width: 97.5%;
-        margin: 0 auto 0 0;
+    }
+    
+    .main-main .main-section .div-main-section.sponsorship div {
+        margin: 15px 10px;
+    }
+
+    /* Footer */
+
+    footer .div-main-footer .links p {
+        text-align: center;
+        margin: 10px 2px 0;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .main-main .main-section .div-main-section .services-card {
+        display: block;
+    }
+
+    .main-main .main-section .div-main-section .services-card .card {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    
+    .main-main .main-section .div-main-section .portfolio-card {
+        display: block;
+    }
+
+    .main-main .main-section .div-main-section .portfolio-card .card {
+        width: 100%;
+    }
+
+
+    .main-main .main-section .div-main-section .maybe-a-card-dad .maybe-a-card {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .main-main .main-section .div-main-section .maybe-a-card-dad .maybe-a-card .maybe-a-description {
+        margin: 0 0 0 10px;
+        order: 1;
+        text-align: left;
+    }
+    
+    .main-main .main-section .div-main-section .maybe-a-card-dad .maybe-a-card:nth-child(even) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .main-main .main-section .div-main-section .maybe-a-card-dad .maybe-a-card:nth-child(even) .maybe-a-description{
+        margin: 0 0 0 10px;
+    }
+    
+    .main-main .main-section .div-main-section .maybe-a-card-dad .maybe-a-line {
+        height: 3200px;
+        left: 59px;
+    }
+    
+    .main-main .main-section .div-main-section .maybe-a-card-dad .maybe-a-greenball {
+        margin: 0;
+    } 
+
+    .main-main .main-section .div-main-section .contact form {
+        display: block;
+    }
+    
+    .main-main .main-section .div-main-section .contact form #left {
+        width: 100%;
+    }
+
+    .main-main .main-section .div-main-section .contact form #right {
+        width: 100%;
+    }
+    
+    footer .div-main-footer .links a {
+        margin: 0;
+    }
+
+}
+    
+
+
+@media screen and (max-width: 550px) {
+
+    header .header .header-title h2 {
+        font-size: 17px;
+    } 
+
+    header .header .header-title h1 {
+        font-size: 34px;
+    }
+    header .header .header-title .button-default a {
+        font-size: 17px;
+        padding: 15px 30px;
+    }
+
+    .main-main .main-section .div-main-section .team .team-card {
+        width: 55%;
+    }
+
+    .main-main .main-section .div-main-section .maybe-a-card-dad .maybe-a-card .maybe-a-description h4 {
+        font-size: 20px;
+    } 
+
+    .main-main .main-section .div-main-section .maybe-a-card-dad .maybe-a-card .maybe-a-description p {
+        font-size: 15px;
     }
 
 }
